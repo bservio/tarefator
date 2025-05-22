@@ -19,17 +19,19 @@ public class TarefaServiceImpl implements TarefaService {
 	private TarefaDao dao;
 
 	@Override
-	public void salvar(Tarefa tarefa) {
+	public Tarefa salvar(Tarefa tarefa) {
 		// TODO Auto-generated method stub
 		dao.save(tarefa);
+		return tarefa;
 		
 
 	}
 
 	@Override
-	public void editar(Tarefa tarefa) {
+	public Tarefa editar(Tarefa tarefa) {
 		// TODO Auto-generated method stub
 		dao.update(tarefa);
+		return tarefa;
 
 	}
 
