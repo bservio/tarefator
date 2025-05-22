@@ -11,7 +11,7 @@
 </head>
 <body>
                 
-<form method="POST" th:action="${tarefa.id == null} ? @{/tarefas/salvar} : @{tarefas/editar}"  th:object=${tarefa}>
+<form method="POST" th:action="${tarefa.id == null} ? @{/tarefas/salvar} : @{/tarefas/editar}"  th:object=${tarefa}>
 
 <input type="hidden" th:field="*{id}">   
 	
